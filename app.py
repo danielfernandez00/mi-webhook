@@ -1,14 +1,12 @@
 from flask import Flask, request, jsonify
-from openai import OpenAI
+import openai
 import os
 
 app = Flask(__name__)
 
-# Configurar cliente OpenRouter con GPT-3.5
-client = OpenAI(
-    base_url="https://openrouter.ai/api/v1",
-    api_key=os.environ.get("OPENROUTER_API_KEY")
-)
+# Configurar OpenAI para usar OpenRouter
+openai.api_key = os.environ.get("OPENROUTER_API_KEY")
+openai.api_base = "https://openrouter.ai/api/v1"
 
 @app.route("/webhook", methods=["POST"])
 def webhook():
@@ -16,13 +14,9 @@ def webhook():
         req = request.get_json(silent=True, force=True)
         user_text = req["queryResult"]["queryText"]
 
-        completion = client.chat.completions.create(
+        completion = openai.ChatCompletion.create(
             model="openai/gpt-3.5-turbo",
-            messages=[{"role": "user", "content": user_text}],
-            extra_headers={
-                "HTTP-Referer": "https://mi-proyecto.up.railway.app",  # opcional
-                "X-Title": "Mi Webhook GPT3.5"  # opcional
-            }
+            messages=[{"role": "user", "content": user_text}]
         )
 
         llm_reply = completion.choices[0].message.content.strip()
@@ -32,7 +26,6 @@ def webhook():
         llm_reply = f"Error interno: {str(e)}"
 
     return jsonify({"fulfillmentText": llm_reply})
-
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
