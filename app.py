@@ -18,7 +18,7 @@ def webhook():
 
         # Prompt para el modelo
         payload = {
-            "inputs": f"Eres un asistente amable y útil.\nUsuario: {user_text}\nAsistente:",
+            "inputs": f"Eres un asistente amable y útil. Debes devolver el saludo al usuario\nUsuario: {user_text}\nAsistente:",
             "parameters": {
                 "max_new_tokens": 150,
                 "temperature": 0.7,
