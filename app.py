@@ -22,7 +22,21 @@ conversation_histories = {}
 
 # Diccionario con instrucciones por intent
 INTENT_INSTRUCTIONS = {
-    "caracteristicas-tecnicas": "Proporciona una breve resumen sobre las motorizaciones cada una, indica de forma concisa sus ventajas y sus precios"
+    "caracteristicas-tecnicas": """
+RESPUESTA OBLIGATORIA - DEBES INCLUIR EXACTAMENTE ESTO:
+
+1. Las 4 motorizaciones del DC-SUV 2025:
+   - TCe 67 kW (90 CV) Gasolina: 21.690€
+   - Eco-G 74 kW (100 CV) GLP: 23.390€  
+   - TCe 103 kW (140 CV) EDC mild hybrid: 24.900€
+   - E-Tech full hybrid 117 kW (160 CV): 27.490€
+
+2. Menciona las ventajas principales de cada motorización
+
+3. Termina sugiriendo visitar concesionario DC Motors
+
+NO respondas con saludos genéricos. DEBES hablar específicamente de las motorizaciones y precios.
+"""
 }
 
 # Documentación base sobre el DC-SUV 2025
