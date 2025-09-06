@@ -103,9 +103,17 @@ def webhook():
         conversation_histories[user_id] = conversation_histories[user_id][-6:]
 
         # Construir prompt para el LLM: system + instrucciones por intent + historial
-        system_prompt = DC_SUV_INFO
+        # DEBUGGING: Ver qué intent llega
+        logger.info(f"🔍 Intent recibido: '{intent_name}'")
+        logger.info(f"🔍 Intents disponibles: {list(INTENT_INSTRUCTIONS.keys())}")
+
+        # Construir prompt más efectivo
         if intent_name in INTENT_INSTRUCTIONS:
-            system_prompt += f"\nInstrucciones para este intent ({intent_name}): {INTENT_INSTRUCTIONS[intent_name]}"
+            logger.info(f"✅ Aplicando instrucciones para: {intent_name}")
+            system_prompt = f"{INTENT_INSTRUCTIONS[intent_name]}\n\n{DC_SUV_INFO}"
+        else:
+            logger.info(f"❌ Intent '{intent_name}' no encontrado, usando prompt base")
+            system_prompt = DC_SUV_INFO
 
         messages = [{"role": "system", "content": system_prompt}]
         messages.extend(conversation_histories[user_id])
