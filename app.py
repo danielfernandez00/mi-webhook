@@ -22,8 +22,7 @@ conversation_histories = {}
 
 # Diccionario con instrucciones por intent
 INTENT_INSTRUCTIONS = {
-    "caracteristicas-tecnicas": "Responde de manera concisa sobre el DC-SUV 2025 usando la información disponible. Céntrate en las motorizaciones disponibles, sus ventajas y el precio de cada una. "
-    
+    "caracteristicas-tecnicas": "Proporciona una breve resumen sobre las motorizaciones cada una, indica de forma concisa sus ventajas y sus precios"
 }
 
 # Documentación base sobre el DC-SUV 2025
