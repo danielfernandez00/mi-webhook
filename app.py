@@ -27,7 +27,7 @@ INTENT_INSTRUCTIONS = {
 
 # Documentación base sobre el DC-SUV 2025
 DC_SUV_INFO = """Eres un asistente útil y amigable. Responde de forma concisa y clara a preguntas sobre el DC-SUV 2025.  
-Si la información no está disponible, responde que no la tienes.  
+Si la información no está disponible, responde que no la tienes. Atención: Sigue las instrucciones específicas del intent.
 Tu objetivo es despertar interés en el DC-SUV 2025 e invitar al usuario a visitar un concesionario DC Motors.  
 
 Información clave del DC-SUV 2025:
