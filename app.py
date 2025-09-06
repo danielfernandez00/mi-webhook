@@ -49,6 +49,7 @@ Servicios adicionales: seguros, extensión de garantía, mantenimiento y **DC Mo
 Cosas que tienes que tener en cuenta:
 * Si el usuario te pregunta algo que no tiene que ver con el DC-SUV 2025, dile que no tienes información sobre ese tema.
 * Si el usuario te pide que le cuentes sobre el DC-SUV 2025, hazlo de manera breve y concisa, y pregúntale si quiere saber algo en concreto.
+* Si el usuario quiere que le cuentes más sobre las características técnicas, háblale de las motorizaciones, incluyendo ventajas, etiquetas y precios
 """
 
 def call_openrouter_api(messages, model=DEFAULT_MODEL):
