@@ -49,8 +49,8 @@ def call_openrouter_api(messages, model=DEFAULT_MODEL):
     payload = {
         "model": model,
         "messages": messages,
-        "max_tokens": 600,
-        "temperature": 0.7,
+        "max_tokens": 1500,
+        "temperature": 0.5,
         "top_p": 0.9
     }
     
