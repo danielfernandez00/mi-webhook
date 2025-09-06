@@ -14,7 +14,7 @@ def webhook():
         user_text = req["queryResult"]["queryText"]
 
         # Petición a DeepSeek
-        url = "https://api.openrouter.ai/v1/deepseek-r1"
+        url = "https://openrouter.ai/api/v1/deepseek-r1"
         headers = {
             "Authorization": f"Bearer {DEEPSEEK_API_KEY}",
             "Content-Type": "application/json"
