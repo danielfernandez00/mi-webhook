@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 # Variables de entorno
 HF_API_KEY = os.environ.get("HF_API_KEY")
-MODEL_NAME = os.environ.get("MODEL_NAME", "TheBloke/WizardLM-7B-uncensored-GPTQ")
+MODEL_NAME = os.environ.get("MODEL_NAME", "google/flan-t5-small")
 HEADERS = {"Authorization": f"Bearer {HF_API_KEY}"}
 
 @app.route("/webhook", methods=["POST"])
