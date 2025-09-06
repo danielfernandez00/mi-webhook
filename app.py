@@ -1,11 +1,14 @@
 from flask import Flask, request, jsonify
-import requests
+from openai import OpenAI
 import os
 
 app = Flask(__name__)
 
-# Tu API Key de DeepSeek (desde variables de entorno en Railway)
-DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY")
+# Configurar cliente OpenRouter con GPT-3.5
+client = OpenAI(
+    base_url="https://openrouter.ai/api/v1",
+    api_key=os.environ.get("OPENROUTER_API_KEY")
+)
 
 @app.route("/webhook", methods=["POST"])
 def webhook():
@@ -13,30 +16,23 @@ def webhook():
         req = request.get_json(silent=True, force=True)
         user_text = req["queryResult"]["queryText"]
 
-        # Petición a DeepSeek
-        url = "https://openrouter.ai/api/v1/deepseek-r1"
-        headers = {
-            "Authorization": f"Bearer {DEEPSEEK_API_KEY}",
-            "Content-Type": "application/json"
-        }
-        payload = {
-            "model": "deepseek-reasoner",
-            "messages": [{"role": "user", "content": user_text}]
-        }
+        completion = client.chat.completions.create(
+            model="openai/gpt-3.5-turbo",
+            messages=[{"role": "user", "content": user_text}],
+            extra_headers={
+                "HTTP-Referer": "https://mi-proyecto.up.railway.app",  # opcional
+                "X-Title": "Mi Webhook GPT3.5"  # opcional
+            }
+        )
 
-        response = requests.post(url, headers=headers, json=payload, timeout=30)
-
-        if response.status_code != 200:
-            llm_reply = f"Error: DeepSeek API devolvió código {response.status_code}"
-        else:
-            data = response.json()
-            llm_reply = data["choices"][0]["message"]["content"].strip()
+        llm_reply = completion.choices[0].message.content.strip()
 
     except Exception as e:
         print("Error interno:", e)
         llm_reply = f"Error interno: {str(e)}"
 
     return jsonify({"fulfillmentText": llm_reply})
+
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
