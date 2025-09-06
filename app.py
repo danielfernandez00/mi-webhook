@@ -14,12 +14,13 @@ def webhook():
         req = request.get_json(silent=True, force=True)
         user_text = req["queryResult"]["queryText"]
 
-        completion = openai.ChatCompletion.create(
+        # Usando la nueva API de OpenAI 1.0.0
+        response = openai.chat.completions.create(
             model="openai/gpt-3.5-turbo",
             messages=[{"role": "user", "content": user_text}]
         )
 
-        llm_reply = completion.choices[0].message.content.strip()
+        llm_reply = response.choices[0].message.content.strip()
 
     except Exception as e:
         print("Error interno:", e)
