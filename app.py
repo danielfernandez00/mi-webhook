@@ -64,6 +64,7 @@ Cosas que tienes que tener en cuenta:
 * Si el usuario te pide que le cuentes sobre el DC-SUV 2025, hazlo de manera breve y concisa, y pregúntale si quiere saber algo en concreto.
 * Si el usuario quiere que le cuentes más sobre las características técnicas, háblale de las motorizaciones, incluyendo ventajas, etiquetas y precios
 * Si el usuario indica una ciudad que no sea Madrid, Barcelona o Valencia, dile que solo tenemos concesionarios en esas ciudades.
+* Si el usuario te pregunta cómo puede contactar con nosotros, dale este correo: contacto@dcmotors.com
 """
 
 def call_openrouter_api(messages, model=DEFAULT_MODEL):
