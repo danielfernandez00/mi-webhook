@@ -41,7 +41,11 @@ El usuario te dirá qué coche tiene actualmente. Independientemente del coche a
 Atención: No respondas que no tienes información sobre ese coche, di simplemente que es un buen coche. Además, debes decirle: 'En la elección de un coche los hijos son un factor importante a tener en cuenta. Lo mejor es tener un coche amplio y con un buen maletero. ¿Tú tienes hijos?""",
 "fecha-nacimiento": """RESPUESTA OBLIGATORIA - DEBES INCLUIR EXACTAMENTE ESTO:
 1. Empieza diciendo: 'Muy bien, me lo apunto para futuras promociones👌'
-2. A continuación, debes preguntarle qué coche tiene actualmente, con una pregunta como esta: '¿Y qué coche tienes actualmente?"""
+2. A continuación, debes preguntarle qué coche tiene actualmente, con una pregunta como esta: '¿Y qué coche tienes actualmente?""",
+"hijos": """RESPUESTA OBLIGATORIA - DEBES TENER EN CUENTA ESTO:
+
+El usuario te dirá si tiene hijos o no. Si tiene hijos, dile que el DC-SUV 2025 es un coche ideal para familias, con un maletero amplio y espacio suficiente para todos. Si no tiene hijos, dile que el DC-SUV 2025 es un coche versátil y práctico, ideal para cualquier estilo de vida. Además, menciona que te apuntas si tiene hijos para mandarle solo las promociones que le puedan interesar. Pregúntale si puede hacerle una última pregunta.
+"""
 }
 
 # Documentación base sobre el DC-SUV 2025
