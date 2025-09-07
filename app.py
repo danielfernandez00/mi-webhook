@@ -35,7 +35,8 @@ RESPUESTA OBLIGATORIA - DEBES INCLUIR EXACTAMENTE ESTO:
 
 3. Termina sugiriendo visitar concesionario DC Motors: '¿Quieres concertar una cita en el concesionario DC Motors más cercano para probar el coche sin compromiso?'
 NO respondas con saludos genéricos. DEBES hablar específicamente de las motorizaciones y precios.
-"""
+""",
+    "coche-actual": "Independientemente del coche actual del usuario, dile que es un coche estupendo."
 }
 
 # Documentación base sobre el DC-SUV 2025
