@@ -52,7 +52,6 @@ Asegúrate de incluir en tu respuesta todos los puntos indicados
 "detalles-financiacion": """RESPUESTA OBLIGATORIA - DEBES INCLUIR EXACTAMENTE ESTO:
 1. Explica al usuario, a partir de la información que tienes, las opciones de financiación del DC-SUV 2025 (crédito, preference, renting y suscripción), incluyendo las ventajas principales de cada una.
 2. Pregúntale si quiere calcular una simulación de financiación
-3. Pregúntale si quiere concertar una cita en el concesionario DC Motors más cercano para probar el coche sin compromiso.
 Atención: Asegúrate de incluir en tu respuesta todos los puntos indicados.
 """
 }
