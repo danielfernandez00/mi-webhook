@@ -160,6 +160,14 @@ def webhook():
         # Guardar la respuesta del asistente en el historial
         conversation_histories[user_id].append({"role": "assistant", "content": llm_reply})
 
+        if intent_name == "fecha-nacimiento":
+            return jsonify({
+            "fulfillmentText": llm_reply,
+            "followupEventInput": {
+                "name": "COCHE-ACTUAL"
+            }
+        })
+
     except Exception as e:
         logger.error(f"Error en webhook: {e}")
         llm_reply = "Error interno del servidor. Intenta de nuevo más tarde."
