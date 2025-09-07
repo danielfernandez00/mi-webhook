@@ -43,7 +43,7 @@ Atención: No respondas que no tienes información sobre ese coche, di simplemen
 1. Empieza diciendo: 'Muy bien, me lo apunto para futuras promociones👌'
 2. A continuación, debes preguntarle qué coche tiene actualmente, con una pregunta como esta: '¿Y qué coche tienes actualmente?""",
 "etiqueta-eco-no": """RESPUESTA OBLIGATORIA - DEBES TENER EN CUENTA ESTO:
-1. El usuario te dirá qué etiqueta tiene su coche actual.
+1. El usuario te dirá qué etiqueta tiene su coche actual (C, B o no tiene)
 2. Si el usuario te pregunta qué es una etiqueta, explícaselo brevemente.
 3. Explica las motorizaciones del DC-SUV 2025 que tienen etiqueta ECO (Eco-G 100 CV, TCe 140 CV Mild Hybrid EDC y E-Tech Full Hybrid 160 CV), incluyendo ventajas y precios.
 4. Explícale que la etiqueta ECO le permitirá acceder a zonas de bajas emisiones y beneficiarse de ventajas fiscales y de ayudas para la compra por parte de las administraciones públicas.
