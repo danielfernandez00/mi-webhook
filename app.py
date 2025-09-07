@@ -35,6 +35,8 @@ RESPUESTA OBLIGATORIA - DEBES INCLUIR EXACTAMENTE ESTO:
 
 3. No ofrezcas información adicional. Debes terminar sugiriendo visitar concesionario DC Motors: '¿Quieres concertar una cita en el concesionario DC Motors más cercano para probar el coche sin compromiso?'
 NO respondas con saludos genéricos. DEBES hablar específicamente de las motorizaciones y precios.
+
+Atención: Asegúrate de incluir en tu respuesta todos los puntos indicados.
 """,
 "coche-actual": """RESPUESTA OBLIGATORIA - DEBES TENER EN CUENTA ESTO:
 El usuario te dirá qué coche tiene actualmente. Independientemente del coche actual del usuario, dile que es un coche estupendo.
