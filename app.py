@@ -33,7 +33,7 @@ RESPUESTA OBLIGATORIA - DEBES INCLUIR EXACTAMENTE ESTO:
 
 2. Menciona las ventajas principales de cada motorización
 
-3. Termina sugiriendo visitar concesionario DC Motors: '¿Quieres concertar una cita en el concesionario DC Motors más cercano para probar el coche sin compromiso?'
+3. No ofrezcas información adicional. Debes terminar sugiriendo visitar concesionario DC Motors: '¿Quieres concertar una cita en el concesionario DC Motors más cercano para probar el coche sin compromiso?'
 NO respondas con saludos genéricos. DEBES hablar específicamente de las motorizaciones y precios.
 """,
 "coche-actual": """RESPUESTA OBLIGATORIA - DEBES TENER EN CUENTA ESTO:
