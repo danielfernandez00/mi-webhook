@@ -163,13 +163,29 @@ def webhook():
         # Guardar la respuesta del asistente en el historial
         conversation_histories[user_id].append({"role": "assistant", "content": llm_reply})
 
+        # --- Primer turno: intent "fecha-nacimiento" ---
         if intent_name == "fecha-nacimiento":
             return jsonify({
-            "fulfillmentText": llm_reply,
-            "followupEventInput": {
-                "name": "COCHE-ACTUAL"
-            }
-        })
+                "fulfillmentText": llm_reply,  # respuesta del LLM
+                "outputContexts": [
+                    {
+                        "name": f"{req['session']}/contexts/esperando_coche_actual",
+                        "lifespanCount": 1
+                    }
+                ]
+            })
+
+        # --- Segundo turno: detectamos que el contexto está activo ---
+        contexts = query_result.get("outputContexts", [])
+        for context in contexts:
+            if context.get("name", "").endswith("esperando_coche_actual"):
+                return jsonify({
+                    "fulfillmentText": "Muy bien, me lo apunto para futuras promociones👌. ¿Y qué coche tienes actualmente?",
+                    "followupEventInput": {
+                        "name": "COCHE-ACTUAL"
+                    }
+                })
+
 
     except Exception as e:
         logger.error(f"Error en webhook: {e}")
