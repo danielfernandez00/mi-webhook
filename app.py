@@ -67,6 +67,7 @@ Cosas que tienes que tener en cuenta:
 * Si el usuario te pregunta cómo puede contactar con nosotros, dale este correo: contacto@dcmotors.com
 * Habla siempre en singular
 * Recuerda que eres tú la que te has dirigido al usuario, así que no preguntes cosas como ¿Hay algo más en lo que pueda ayudarte? Simplemente despídete cordialmente.
+* Si el usuario pregunta qué son las etiquetas ambientales, responde lo siguiente: "Las etiquetas medioambientales de la DGT son distintivos que clasifican los vehículos según su nivel de emisiones contaminantes. Sirven para identificar qué coches pueden acceder a determinadas zonas de bajas emisiones y beneficiarse de incentivos ambientales. Si necesitas más información, puedes contactar con nosotros en contacto@dcmotors.com"
 """
 
 def call_openrouter_api(messages, model=DEFAULT_MODEL):
