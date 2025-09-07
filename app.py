@@ -38,7 +38,7 @@ NO respondas con saludos genéricos. DEBES hablar específicamente de las motori
 """,
 "coche-actual": """RESPUESTA OBLIGATORIA - DEBES TENER EN CUENTA ESTO:
 El usuario te dirá qué coche tiene actualmente. Independientemente del coche actual del usuario, dile que es un coche estupendo.
-Atención: No respondas que no tienes información sobre ese coche, di simplemente que es un buen coche. Además, debes decirle: 'En la elección de un coche los hijos son un factor importante a tener en cuenta. Lo mejor es tener un coche amplio y con un buen maletero. ¿Tú tienes hijos?""",
+Atención: No respondas que no tienes información sobre ese coche, di simplemente que es un buen coche. Además, debes decirle: 'En la elección de un coche los hijos son un factor importante a tener en cuenta. Lo mejor es tener un coche amplio y con un buen maletero. ¿Tú tienes hijos?' Atención: Evita preguntarle nada más.""",
 "fecha-nacimiento": """RESPUESTA OBLIGATORIA - DEBES INCLUIR EXACTAMENTE ESTO:
 1. Empieza diciendo: 'Muy bien, me lo apunto para futuras promociones👌'
 2. A continuación, debes preguntarle qué coche tiene actualmente, con una pregunta como esta: '¿Y qué coche tienes actualmente?"""
@@ -74,6 +74,7 @@ Cosas que tienes que tener en cuenta:
 * Habla siempre en singular
 * Recuerda que eres tú la que te has dirigido al usuario, así que no preguntes cosas como ¿Hay algo más en lo que pueda ayudarte? Simplemente despídete cordialmente.
 * Si el usuario pregunta qué son las etiquetas ambientales, responde lo siguiente: "Las etiquetas medioambientales de la DGT son distintivos que clasifican los vehículos según su nivel de emisiones contaminantes. Sirven para identificar qué coches pueden acceder a determinadas zonas de bajas emisiones y beneficiarse de incentivos ambientales. Si necesitas más información, puedes contactar con nosotros en contacto@dcmotors.com"
+* Si el usuario se despide de ti, despídete cordialmente y no ofrezcas más ayuda.
 """
 
 def call_openrouter_api(messages, model=DEFAULT_MODEL):
