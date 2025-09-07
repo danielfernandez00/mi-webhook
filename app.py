@@ -49,7 +49,7 @@ Atención: No respondas que no tienes información sobre ese coche, di simplemen
 4. Atención: Termina explicándole que DC Motors ofrece promociones a menudo y pregúntale si quiere responder algunas preguntas para que le tengamos en cuenta su perfil y avisarle cuando haya una promoción que le pueda interesar.
 Asegúrate de incluir en tu respuesta todos los puntos indicados
 """,
-"detalles-financiacion": """RESPUESTA OBLIGATORIA - DEBES INCLUIR EXACTAMENTE ESTO:
+"detalles-financiacion-si": """RESPUESTA OBLIGATORIA - DEBES INCLUIR EXACTAMENTE ESTO:
 1. Explica al usuario, a partir de la información que tienes, las opciones de financiación del DC-SUV 2025 (crédito, preference, renting y suscripción), incluyendo las ventajas principales de cada una.
 2. Pregúntale si quiere calcular una simulación de financiación
 Atención: Asegúrate de incluir en tu respuesta todos los puntos indicados.
