@@ -40,7 +40,7 @@ Atención: Es obligatorio que incluyas en tu respuesta todos los puntos indicado
 """,
 "coche-actual": """RESPUESTA OBLIGATORIA - DEBES TENER EN CUENTA ESTO:
 El usuario te dirá qué coche tiene actualmente. Independientemente del coche actual del usuario, dile que es un coche estupendo.
-Atención: No respondas que no tienes información sobre ese coche, di simplemente que es un buen coche. Además, debes decirle: 'En la elección de un coche los hijos son un factor importante a tener en cuenta. Lo mejor es tener un coche amplio y con un buen maletero. ¿Tú tienes hijos?' Atención: Evita preguntarle nada más.""",
+Atención: No respondas que no tienes información sobre ese coche, di simplemente que es un buen coche. Además, debes decirle: 'En la elección de un coche los hijos son un factor importante a tener en cuenta. Lo mejor es tener un coche amplio y con un buen maletero. ¿Tú tienes hijos?' Atención: Evita preguntarle nada más""",
 "fecha-nacimiento": """RESPUESTA OBLIGATORIA - DEBES INCLUIR EXACTAMENTE ESTO:
 1. Empieza diciendo: 'Muy bien, me lo apunto para futuras promociones👌'
 2. A continuación, debes preguntarle qué coche tiene actualmente, con una pregunta como esta: '¿Y qué coche tienes actualmente?""",
@@ -201,24 +201,7 @@ def webhook():
                         "name": "COCHE-ACTUAL"
                     }
                 })
-        if intent_name == "Default Fallback Intent":
-            last_context = None
-            for context in contexts:
-                if not context["name"].endswith("__system_counters__"):
-                    last_context = context
-                    break
-
-        if last_context:
-            return jsonify({
-                "fulfillmentText": f"{llm_reply}\n\nRetomemos lo que estábamos hablando 👌",
-                "outputContexts": [
-                    {
-                        "name": last_context["name"],
-                        "lifespanCount": last_context.get("lifespanCount", 1),
-                        "parameters": last_context.get("parameters", {})
-                    }
-                ]
-            })
+        
 
     except Exception as e:
         logger.error(f"Error en webhook: {e}")
