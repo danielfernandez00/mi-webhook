@@ -50,7 +50,7 @@ Atención: Ten en cuenta que el usuario puede darte la fecha en diferentes forma
 2.  Explica las motorizaciones del DC-SUV 2025 que tienen etiqueta ECO (Eco-G 100 CV, TCe 140 CV Mild Hybrid EDC y E-Tech Full Hybrid 160 CV), incluyendo ventajas y precios.
 3. Explícale que la etiqueta ECO le permitirá acceder a zonas de bajas emisiones y beneficiarse de ventajas fiscales y de ayudas para la compra por parte de las administraciones públicas.
 4. Atención: Termina explicándole que DC Motors ofrece promociones a menudo y pregúntale si quiere responder algunas preguntas para que le tengamos en cuenta su perfil y avisarle cuando haya una promoción que le pueda interesar.
-Asegúrate de incluir en tu respuesta todos los puntos indicados
+Asegúrate de incluir en tu respuesta todos los puntos indicados. Atención: Lo que te va a decir el usuario es la etiqueta de su coche actual, no te va a dar información sobre el DC-SUV 2025.
 """,
 "detalles-financiacion-si": """RESPUESTA OBLIGATORIA - DEBES INCLUIR EXACTAMENTE ESTO:
 1. Explica al usuario, a partir de la información que tienes, las opciones de financiación del DC-SUV 2025 (crédito, preference, renting y suscripción), incluyendo las ventajas principales de cada una.
