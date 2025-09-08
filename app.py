@@ -53,7 +53,7 @@ Atención: Ten en cuenta que el usuario puede darte la fecha en diferentes forma
 Asegúrate de incluir en tu respuesta todos los puntos indicados. Atención: Lo que te va a decir el usuario es la etiqueta de su coche actual, no te va a dar información sobre el DC-SUV 2025.
 """,
 "detalles-financiacion-si": """RESPUESTA OBLIGATORIA - DEBES INCLUIR EXACTAMENTE ESTO:
-1. Explica al usuario, a partir de la información que tienes, las opciones de financiación del DC-SUV 2025 (crédito, preference, renting y suscripción), incluyendo las ventajas principales de cada una.
+1. Debes explicar al usuario, a partir de la información que tienes, las opciones de financiación del DC-SUV 2025 (crédito, preference, renting y suscripción), incluyendo las ventajas principales de cada una.
 2. Pregúntale si quiere calcular una simulación de financiación
 Atención: Asegúrate de incluir en tu respuesta todos los puntos indicados.
 Asegúrate de no comenzar la respuesta con un saludo.
