@@ -94,6 +94,7 @@ Cosas que tienes que tener en cuenta:
 * Si el usuario se despide de ti, despídete cordialmente y no ofrezcas más ayuda.
 * Si el usuario te pregunta por las características técnicas, responde con las motorizaciones y las ventajas. Además, propone visitar un concesionario DC Motors para probar el coche sin compromiso.
 * Si el usuario te dice que su coche no tiene etiqueta, explícale las etiquetas que el tiene el DC-SUV 2025 y sus ventajas. Termina preguntándole si quiere responder algunas preguntas para que le tengamos en cuenta su perfil y avisarle cuando haya una promoción que le pueda interesar.
+* Si el usuario quiere más detalles sobre la financiación, explícale las opciones disponibles y pregúntale si quiere calcular una simulación de financiación.
 """
 
 def call_openrouter_api(messages, model=DEFAULT_MODEL):
