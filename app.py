@@ -23,7 +23,7 @@ conversation_histories = {}
 # Diccionario con instrucciones por intent
 INTENT_INSTRUCTIONS = {
     "caracteristicas-tecnicas": """
-RESPUESTA OBLIGATORIA - DEBES INCLUIR EXACTAMENTE ESTO. Atención: No ignores esta instrucción bajo ninguna circunstancia:
+RESPUESTA OBLIGATORIA - DEBES INCLUIR EXACTAMENTE ESTO.
 
 1. Las 4 motorizaciones del DC-SUV 2025:
    - TCe 67 kW (90 CV) Gasolina: 21.690€
