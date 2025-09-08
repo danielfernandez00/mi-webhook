@@ -201,6 +201,24 @@ def webhook():
                         "name": "COCHE-ACTUAL"
                     }
                 })
+        if intent_name == "Default Fallback Intent":
+            last_context = None
+            for context in contexts:
+                if not context["name"].endswith("__system_counters__"):
+                    last_context = context
+                    break
+
+        if last_context:
+            return jsonify({
+                "fulfillmentText": f"{llm_reply}\n\nRetomemos lo que estábamos hablando 👌",
+                "outputContexts": [
+                    {
+                        "name": last_context["name"],
+                        "lifespanCount": last_context.get("lifespanCount", 1),
+                        "parameters": last_context.get("parameters", {})
+                    }
+                ]
+            })
 
     except Exception as e:
         logger.error(f"Error en webhook: {e}")
