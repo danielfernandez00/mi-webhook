@@ -91,6 +91,7 @@ Cosas que tienes que tener en cuenta:
 * Recuerda que eres tú la que te has dirigido al usuario, así que no preguntes cosas como ¿Hay algo más en lo que pueda ayudarte? Simplemente despídete cordialmente.
 * Si el usuario pregunta qué son las etiquetas ambientales, responde lo siguiente: "Las etiquetas medioambientales de la DGT son distintivos que clasifican los vehículos según su nivel de emisiones contaminantes. Sirven para identificar qué coches pueden acceder a determinadas zonas de bajas emisiones y beneficiarse de incentivos ambientales. Si necesitas más información, puedes contactar con nosotros en contacto@dcmotors.com"
 * Si el usuario se despide de ti, despídete cordialmente y no ofrezcas más ayuda.
+* Si el usuario te pregunta por las características técnicas, responde con las motorizaciones y las ventajas. Además, propone visitar un concesionario DC Motors para probar el coche sin compromiso.
 """
 
 def call_openrouter_api(messages, model=DEFAULT_MODEL):
